@@ -1,7 +1,7 @@
 {
   "name": "jekyll-starter-blog",
   "version": "1.0.0",
-  "description": "Jekyll Starter Kit.",
+  "description": "Jekyll Blog Starter Kit.",
   "main": "gulpfile.js",
   "scripts": {
     "start": "export JEKYLL_ENV=development | gulp",
