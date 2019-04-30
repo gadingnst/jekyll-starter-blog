@@ -4,7 +4,13 @@
   <div class="content">
     <h1>
       <span data-aos="flip-left" class="site-title shadow-text">{{site.username}}</span>
-      <span data-aos="flip-right" class="site-description shadow-text">{{site.user_title}}</span>
+      <span data-aos="flip-right" class="site-description shadow-text">
+        {% if page.subtitle %}
+          {{ page.subtitle }}
+        {% else %}
+          {{ site.user_title }}
+        {% endif %}
+      </span>
     </h1>
     <div class="icons-home">
       <a data-aos="flip-right" data-aos-anchor-placement="top-bottom" aria-label="Send email" href="mailto:{{site.email}}"><svg class="icon icon-email"><use xlink:href="#icon-email"></use></svg></a>

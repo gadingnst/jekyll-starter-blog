@@ -13,11 +13,60 @@
 - `npm install` for install node depedencies
 - `bundle install` for install bundle depedencies
 
-#### Initpost command
-- `./initpost -h` output instructions
-- `./initpost -c {POST_TITLE}` create post
-- `./initpost -d {POST_TITLE}` create draft post
-- `./initpost -p {POST_TITLE}` publish/promote a draft to a post
+#### `post.sh` command
+- `./post -h` output instructions
+- `./post -c {POST_TITLE}` create post
+- `./post -d {POST_TITLE}` create draft post
+- `./post -p {POST_TITLE}` publish/promote a draft to a post
+
+#### Setting up your data
+Go and edit `_config.yml`
+```yml
+# Site settings
+name: Sutanlab Blog
+title: Sutan Nst. - Coder
+description: A blog and journal about Sutan Nst, Junior Developer
+baseurl: "/jekyll-starter-blog" # the subpath for this project default is ""
+url: "https://sutanlab.js.org" # the base hostname & protocol in your domain
+
+username: Sutan Nst.
+user_description: Learner, Coder & Coffee Maniac
+user_title: Welcome to My Blog Site
+avatar: /assets/img/sutan.jpeg
+email: sutan.gnst@gmail.com
+github_username: sutanlab
+disqus_username: sutanlab
+facebook_username: sgnzst
+instagram_username: sutan_gnst
+twitter_username: sutan_gnst
+medium_username: sutan.gnst
+
+...
+```
+
+#### Setting theme site
+Go and edit `_variables.scss` in `src/sass` folder
+```scss
+// theme color
+$main: #2c3e50;
+$sidemenu: #242f3a;
+$hover: darken($main, 50%);
+$sec: #FFFFFF;
+$lightGray: #F2F2F2;
+$texts: #333333;
+$colorcode: #3085F4;
+$loader-color: #FFFFFF;
+
+/**
+  * adjust with your disqus theme
+  * if your disqus theme is dark, the color should be darken. 
+  * if your disqus theme is light, the color should be lighten
+*/
+$comment-theme: #304165; 
+
+// responsive cut
+$cut: 37.5rem;
+```
 
 #### How to deploy site in Github Pages
 1. `npm run build` for Compile sass, js and build site files

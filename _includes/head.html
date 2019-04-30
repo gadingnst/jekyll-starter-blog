@@ -9,13 +9,9 @@
   <!-- <meta http-equiv="Expires" content="-1" /> -->
 
   <meta name="title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
-  <meta name="keywords" content="sutan gading fadhillah nasution, sutan nst, sutan, gading, fadhillah, nasution, sgnzst, sutanlab, sutan lab, coder, mahasiswa, it polsri, itpolsri, polsri, politeknik negeri sriwijaya, {% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
+  <meta name="keywords" content="{{ site.name }}, {{ site.username }}, {{ site.title }}, {% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
   <meta name="description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-  <meta name="google-site-verification" content="jLyr0TMCl7eKN6nXKMcBVQE7pq3XshkQCTutxZMwQW4" />
-
-  <!-- Google Authorship Markup -->
-  <link rel="author" href="https://plus.google.com/{{site.gplus_username}}?rel=author">
-
+  
   <!-- Social: Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@{{site.twitter_username}}">
@@ -24,7 +20,7 @@
   {% if page.image %}
   <meta property="twitter:image:src" content="{{ site.baseurl | prepend: site.url }}{{page.image }}">
   {% else %}
-  <meta property="twitter:image:src" content="{{ "/assets/img/sutan.jpeg" | prepend: site.baseurl | prepend: site.url }}">
+  <meta property="twitter:image:src" content="{{ site.avatar | prepend: site.baseurl | prepend: site.url }}">
   {% endif %}
 
   <!-- Social: Facebook / Open Graph -->
@@ -33,7 +29,7 @@
   {% if page.image %}
   <meta property="og:image" content="{{ site.baseurl | prepend: site.url }}{{page.image }}">
   {% else %}
-  <meta property="og:image" content="{{ "/assets/img/sutan.jpeg" | prepend: site.baseurl | prepend: site.url }}">
+  <meta property="og:image" content="{{ site.avatar | prepend: site.baseurl | prepend: site.url }}">
   {% endif %}
   <meta property="og:description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
   <meta property="og:site_name" content="{{ site.title }}">
@@ -41,7 +37,7 @@
   <!-- Social: Google+ / Schema.org  -->
   <meta itemprop="name" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}"/>
   <meta itemprop="description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-  <meta itemprop="image" content="{{ "/assets/img/sutan.jpeg" | prepend: site.baseurl | prepend: site.url }}"/>
+  <meta itemprop="image" content="{{ site.avatar | prepend: site.baseurl | prepend: site.url }}"/>
 
   <!-- Web Manifest -->
   <link rel="manifest" href="{{site.baseurl}}/assets/manifest.json">
@@ -78,16 +74,7 @@
   <meta name="theme-color" content="#2C3E50">
 
   <link rel="stylesheet" href="{{ "/assets/css/main.css" | prepend: site.baseurl }}">
-  <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
 
-  <!-- Google Adsense -->
-  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-  <script>
-    (adsbygoogle = window.adsbygoogle || []).push({
-      google_ad_client: "ca-pub-2464886132224594",
-      enable_page_level_ads: true
-    });
-  </script>
 </head>

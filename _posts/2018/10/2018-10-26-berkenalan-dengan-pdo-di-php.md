@@ -49,18 +49,18 @@ Dapat dilihat bahwa PDO mendukung banyak aplikasi database populer seperti: Orac
 
 Akan tetapi, semua driver ini belum tentu tersedia di sistem kamu. Inilah cara untuk mengetahui driver yang sudah terinstall di sistem kamu :
 
-{%- highlight php -%}
+```php
 <?php
   print_r(PDO::getAvailableDrivers());
 ?>
-{%- endhighlight -%}
+```
 
 Jika Database Driver yang kamu inginkan belum terinstall di sistem kamu, maka kamu harus menginstallnya terlebih dahulu.
 
 ## Membuat Koneksi dengan PDO
 Database yang berbeda memiliki metode koneksi yang sedikit berbeda. Di bawah ini adalah contoh dari beberapa metode untuk terhubung ke database.
 
-{%- highlight php -%}
+```php
 <?php
   try {
     # MS SQL Server
@@ -79,7 +79,7 @@ Database yang berbeda memiliki metode koneksi yang sedikit berbeda. Di bawah ini
     die($e->getMessage());
   }
 ?>
-{%- endhighlight -%}
+```
 
 Kamu harus selalu membungkus operasi PDO di dalam blok **try - catch**, dan gunakan mekanisme exception untuk menampilkan error saat terjadi kesalahan pada mengakses database. [Pelajari lebih lanjut tentang PDO Exception](http://php.net/manual/en/class.pdoexception.php)
 
@@ -89,11 +89,11 @@ Argumen dari constructor PDO terdiri dari 3 bagian, bagian pertama berisi nama d
 
 Setelah membuat koneksi PDO, untuk menghapus koneksi kita tinggal memberikan nilai *“null”* kepada variabel *“Database Handler”* sebagai berikut:
 
-{%- highlight php -%}
+```php
 <?php
   $dbh = null;
 ?>
-{%- endhighlight -%}
+```
 
 Kita harus selalu menutup / menghapus koneksi Database setiap sudah menjalankan query.
 

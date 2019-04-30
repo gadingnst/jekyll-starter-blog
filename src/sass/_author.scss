@@ -49,6 +49,13 @@
   }
 }
 
+.comment-wrapper {
+  background: $comment-theme;
+  display: table;
+  width: 100%;
+  padding: 2.5rem 0;
+}
+
 .comments {
   *zoom: 1;
   width: auto;

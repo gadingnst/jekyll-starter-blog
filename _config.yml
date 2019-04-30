@@ -2,7 +2,7 @@
 name: Sutanlab Blog
 title: Sutan Nst. - Coder
 description: A blog and journal about Sutan Nst, Junior Developer
-baseurl: "/jekyll-starter-blog" # the subpath
+baseurl: "/jekyll-starter-blog" # the subpath for this project default is ""
 url: "https://sutanlab.js.org" # the base hostname & protocol in your domain
 
 username: Sutan Nst.
@@ -10,9 +10,9 @@ user_description: Learner, Coder & Coffee Maniac
 user_title: Welcome to My Blog Site
 avatar: /assets/img/sutan.jpeg
 email: sutan.gnst@gmail.com
-github_username:  sutanlab
+github_username: sutanlab
 disqus_username: sutanlab
-facebook_username:  sgnzst
+facebook_username: sgnzst
 instagram_username: sutan_gnst
 twitter_username: sutan_gnst
 medium_username: sutan.gnst

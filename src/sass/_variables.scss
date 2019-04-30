@@ -8,5 +8,12 @@ $texts: #333333;
 $colorcode: #3085F4;
 $loader-color: #FFFFFF;
 
+/**
+  * adjust with your disqus theme
+  * if your disqus theme is dark, the color should be darken. 
+  * if your disqus theme is light, the color should be lighten
+*/
+$comment-theme: #304165; 
+
 // responsive cut
 $cut: 37.5rem;
