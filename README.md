@@ -75,8 +75,10 @@ $cut: 37.5rem;
 
 3. Commit files and push to development branch.
 
+4. Or you can use automation deploy with `./deploy.sh`
 
 #### How to run server in local for development
 run `npm start` or `bundle exec jekyll server --host=[IP ADDR]`
 
+---
 Copyright © 2019 by Sutan Gading Fadhillah Nasution
