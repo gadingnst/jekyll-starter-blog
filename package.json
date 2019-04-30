@@ -6,7 +6,8 @@
   "scripts": {
     "start": "export JEKYLL_ENV=development | gulp",
     "build": "export JEKYLL_ENV=production | gulp build",
-    "deploy": "gulp deploy"
+    "deploy": "gulp deploy",
+    "postinstall": "bundle install"
   },
   "author": "Sutan Nst.",
   "license": "Unlicense",

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Berkenalan Dengan PDO di PHP"
+title: "Belajar PDO di PHP"
 date: 2018-10-26 15:29:02
 image: '/assets/img/blogimages/'
 description: 'Mengenal apa itu PDO dan bagaimana cara mengimplementasikannya'
