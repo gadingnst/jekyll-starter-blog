@@ -7,7 +7,7 @@
       searchResults: '.search-results',
       searchResultsTitle: '<h4>Hasil Pencarian:</h4>',
       limit: '10',
-      noResults: '<p>Oops!<br/><small>Tidak ada hasil ! :(</small></p>'
+      noResults: '<p>Oops!<br/><small>Tidak ada hasil ! 🙁</small></p>'
     }, options)
 
     let properties = settings.jsonFormat.split(',')
