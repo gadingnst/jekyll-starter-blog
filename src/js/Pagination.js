@@ -7,7 +7,7 @@ function paginateBlog(that, event) {
     dataType: 'HTML',
     beforeSend: function() {
       swal({
-        icon: '/blog/assets/img/tools/loading.gif',
+        icon: BASEURL + '/assets/img/tools/loading.gif',
         text: "Sedang Proses...",
         buttons: false,
         closeOnEsc: false,
