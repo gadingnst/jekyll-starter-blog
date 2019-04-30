@@ -1,7 +1,7 @@
 {
-  "name": "sutanlab-blog",
+  "name": "jekyll-starter-blog",
   "version": "1.0.0",
-  "description": "My Personal Blog Website",
+  "description": "Jekyll Starter Kit.",
   "main": "gulpfile.js",
   "scripts": {
     "start": "export JEKYLL_ENV=development | gulp",
