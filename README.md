@@ -78,3 +78,5 @@ $cut: 37.5rem;
 
 #### How to run server in local for development
 run `npm start` or `bundle exec jekyll server --host=[IP ADDR]`
+
+Copyright © 2019 by Sutan Gading Fadhillah Nasution
