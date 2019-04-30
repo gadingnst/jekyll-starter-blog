@@ -15,9 +15,9 @@
 
 #### `post.sh` command
 - `./post -h` output instructions
-- `./post -c {POST_TITLE}` create post
-- `./post -d {POST_TITLE}` create draft post
-- `./post -p {POST_TITLE}` publish/promote a draft to a post
+- `./post -c POST-TITLE` create post
+- `./post -d POST-TITLE` create draft post
+- `./post -p POST-TITLE` publish/promote a draft to a post
 
 #### Setting up your data
 Go and edit `_config.yml`
@@ -78,7 +78,7 @@ $cut: 37.5rem;
 4. Or you can use automation deploy with `./deploy.sh`
 
 #### How to run server in local for development
-run `npm start` or `bundle exec jekyll server --host=[IP ADDR]`
+run `npm start` or `bundle exec jekyll server --host=IP_ADDR`
 
 ---
 Copyright © 2019 by Sutan Gading Fadhillah Nasution
