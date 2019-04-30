@@ -1,0 +1,6 @@
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
+
+# Error 404
+ErrorDocument 404 /blog/404.html

@@ -1,0 +1,58 @@
+---
+layout: default
+title: "Sutanlab Blog"
+description: "Take a look at my recent blog posts."
+background: /assets/img/bg/desk2.jpg
+pagination:
+  enabled: true
+---
+
+<main id="content" class="home" role="main" itemprop="mainContentOfPage" itemscope="itemscope" itemtype="http://schema.org/Blog">
+  {% for post in paginator.posts %}
+  <article role="article" class="post-item" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
+    <a class="datetime document-load" href="{{ post.url | prepend: site.baseurl }}">
+      <meta itemprop="datePublished" content="{{post.date}}">
+      <time datetime="{{ post.date | date_to_xmlschema }}">
+        <span class="day">
+          {{ post.date | date: "%d" }}
+        </span>
+        <span class="month-year">
+          {{ post.date | date: "%B %Y" }}
+        </span>
+      </time>
+    </a>
+    <div class="content">
+      <a class="document-load" href="{{ post.url | prepend: site.baseurl }}"><h2 class="post-title" itemprop="name">{{ post.title }}</h2></a>
+      <p class="description">
+        {{ post.content | strip_html | truncatewords:40 }}
+        <a href="{{ post.url | prepend: site.baseurl }}" class="link document-load">Baca Selengkapnya</a>
+      </p>
+
+      <div class="tags">
+        {% for tag in post.tags %}
+        <a class="document-load" href="{{ site.baseurl }}/tags/#{{tag | slugify }}">{{ tag }}</a>
+        {% endfor %}
+      </div>
+    </div>
+  </article>
+  {% endfor %}
+
+  <div id="pg" class="pagination">
+    <span style="float: right">
+      {% if paginator.previous_page %}
+        <a onclick="paginateBlog(this, event)" href="{{ paginator.previous_page_path }}" class="paginate-link paginate-blog">
+          &laquo; Previous
+        </a>
+      {% endif %}
+      <span class="page_number ">
+        Halaman: {{ paginator.page }} dari {{ paginator.total_pages }}
+      </span>
+      {% if paginator.next_page %}
+        <a onclick="paginateBlog(this, event)" href="{{ paginator.next_page_path }}" class="paginate-link paginate-blog">
+          Next &raquo;
+        </a>
+      {% endif %}
+    </span>
+  </div>
+
+</main>

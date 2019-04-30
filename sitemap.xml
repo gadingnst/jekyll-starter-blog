@@ -1,0 +1,19 @@
+---
+layout: null
+---
+
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+	{% for link in site.links %}
+	{% if link.external != true %}
+	<url>
+		<loc>{{ link.url | prepend: site.baseurl | prepend: site.url }}</loc>
+	</url>
+	{% endif %}
+	{% endfor %}
+	{% for post in site.posts %}
+	<url>
+		<loc>{{ post.url | prepend: site.baseurl | prepend: site.url }}</loc>
+	</url>
+	{% endfor %}
+</urlset>

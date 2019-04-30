@@ -1,0 +1,24 @@
+{% include preloader.html %}
+<header style="background-image: url('{{ page.background | prepend: site.baseurl }}')" class="header-site" role="banner">
+  <figure class="header-overlay"></figure>
+  <div class="content">
+    <h1>
+      <span data-aos="flip-left" class="site-title shadow-text">{{site.username}}</span>
+      <span data-aos="flip-right" class="site-description shadow-text">{{site.user_title}}</span>
+    </h1>
+    <div class="icons-home">
+      <a data-aos="flip-right" data-aos-anchor-placement="top-bottom" aria-label="Send email" href="mailto:{{site.email}}"><svg class="icon icon-email"><use xlink:href="#icon-email"></use></svg></a>
+      <a data-aos="fade-left" data-aos-anchor-placement="top-bottom" aria-label="My Github" target="_blank" href="https://github.com/{{site.github_username}}"><svg class="icon icon-github-alt"><use xlink:href="#icon-github-alt"></use></svg></a>
+      <a data-aos="zoom-in" data-aos-anchor-placement="top-bottom" aria-label="My Facebook" target="_blank" href="https://www.facebook.com/{{site.facebook_username}}"><svg class="icon icon-facebook"><use xlink:href="#icon-facebook"></use></svg></a>
+      <a data-aos="fade-right" data-aos-anchor-placement="top-bottom" aria-label="My Instagram" target="_blank" href="https://www.instagram.com/{{site.instagram_username}}"><svg class="icon icon-instagram"><use xlink:href="#icon-instagram"></use></svg></a>
+      <a data-aos="flip-left" data-aos-anchor-placement="top-bottom" aria-label="My Twitter" target="_blank" href="https://twitter.com/{{site.twitter_username}}"><svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg></a>
+      {% comment %}
+        <a aria-label="My Medium" target="_blank" href="https://medium.com/@{{site.medium_username}}"><svg class="icon icon-medium"><use xlink:href="#icon-medium"></use></svg></a>
+        <a aria-label="My Google Plus" target="_blank" href="https://plus.google.com/{{site.gplus_username}}/posts"><svg class="icon icon-google-plus"><use xlink:href="#icon-google-plus"></use></svg></a>
+        <a aria-label="Use the RSS to get updated" target="_blank" href="{{ "/feed.xml" | prepend: site.baseurl }}"><svg class="icon icon-rss"><use xlink:href="#icon-rss"></use></svg></a>
+      {% endcomment %}
+    </div>
+  </div>
+  <a role="button" class="down" data-scroll href="#content"><svg class="icon icon-angle-down"><use xlink:href="#icon-angle-down"></use></svg></a>
+  {% include menu-search.html %}
+</header>
