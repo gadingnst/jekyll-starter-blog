@@ -19,6 +19,10 @@ medium_username: sutan.gnst
 gplus_username: u/0/112138172681575865281
 
 # Build settings
+timezone: Asia/Jakarta
+published: true
+future: true
+show_drafts: false
 markdown: kramdown
 highlighter: rouge
 permalink: /:title/
