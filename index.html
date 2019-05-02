@@ -25,7 +25,7 @@ pagination:
       <a class="document-load" href="{{ post.url | prepend: site.baseurl }}"><h2 class="post-title" itemprop="name">{{ post.title }}</h2></a>
       <p class="description">
         {{ post.content | strip_html | truncatewords:40 }}
-        <a href="{{ post.url | prepend: site.baseurl }}" class="link document-load">Baca Selengkapnya</a>
+        <a href="{{ post.url | prepend: site.baseurl }}" class="link document-load">Read More</a>
       </p>
 
       <div class="tags">
@@ -40,15 +40,15 @@ pagination:
   <div id="pg" class="pagination">
     <span style="float: right">
       {% if paginator.previous_page %}
-        <a onclick="paginateBlog(this, event)" href="{{ paginator.previous_page_path }}" class="paginate-link paginate-blog">
+        <a onclick="paginateBlog(this, event)" href="{{ paginator.previous_page_path | prepend: site.baseurl }}" class="paginate-link paginate-blog">
           &laquo; Previous
         </a>
       {% endif %}
       <span class="page_number ">
-        Halaman: {{ paginator.page }} dari {{ paginator.total_pages }}
+        Page: {{ paginator.page }} of {{ paginator.total_pages }}
       </span>
       {% if paginator.next_page %}
-        <a onclick="paginateBlog(this, event)" href="{{ paginator.next_page_path }}" class="paginate-link paginate-blog">
+        <a onclick="paginateBlog(this, event)" href="{{ paginator.next_page_path | prepend: site.baseurl }}" class="paginate-link paginate-blog">
           Next &raquo;
         </a>
       {% endif %}

@@ -5,9 +5,9 @@
       jsonFormat: 'title,category,desc,url,date,shortdate',
       template: '<li><article><a class="document-load" href="{url}">{title} <span class="entry-date"><time datetime="{date}">{date}</time></span></a></article></li>',
       searchResults: '.search-results',
-      searchResultsTitle: '<h4>Hasil Pencarian:</h4>',
+      searchResultsTitle: '<h4>Search Results:</h4>',
       limit: '10',
-      noResults: '<p>Oops!<br/><small>Tidak ada hasil ! 🙁</small></p>'
+      noResults: '<p>Oops!<br/><small>Nothing Found ! 🙁</small></p>'
     }, options)
 
     let properties = settings.jsonFormat.split(',')

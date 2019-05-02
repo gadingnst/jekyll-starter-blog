@@ -8,7 +8,7 @@ function paginateBlog(that, event) {
     beforeSend: function() {
       swal({
         icon: BASEURL + '/assets/img/tools/loading.gif',
-        text: "Sedang Proses...",
+        text: "Please Wait...",
         buttons: false,
         closeOnEsc: false,
         closeOnClickOutside: false
@@ -23,6 +23,7 @@ function paginateBlog(that, event) {
     $('#content').html(htmlData)
     document.title = title
     window.history.pushState({html: htmlData, title: title}, title, pageUrl)
+    new SmoothScroll().animateScroll(document.querySelector('#content'))
     window.onpopstate = event => {
       if(event.state){
         $('#content').html(event.state.html)

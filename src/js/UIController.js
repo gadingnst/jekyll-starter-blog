@@ -37,10 +37,7 @@
   })
 
   // Scroll
-  smoothScroll.init({
-    updateURL: false,
-    offset: 65
-  })
+  new SmoothScroll('a[href*="#"]')
 
   // skill bar init
   $('.my-skill-bar').simpleSkillbar()
