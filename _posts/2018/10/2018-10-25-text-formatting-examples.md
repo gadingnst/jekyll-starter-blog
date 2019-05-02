@@ -1,14 +1,15 @@
 ---
 layout: post
-title: "Text Formatting Examples"
+title: Text Formatting Examples
 date: 2018-10-25 23:26:00
-image: '/assets/img/blog/'
+image: /assets/img/blog/
 description: Example Text Formatting using Markdown
 tags: 
   - markdown
-categories:
+categories: 
   - Example
 twitter_text:
+keywords: markdown, jekyll
 ---
 
 # Markdown Support

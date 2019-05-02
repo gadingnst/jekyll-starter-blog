@@ -80,21 +80,24 @@ $cut: 37.5rem;
 
 #### Create new Post with `post.sh` command
 You just follow the command `./post -c Post Title` to create new post.  The new post will be created at `_posts` with `.md` format. And when you create a new post, you need to fill the post information in the front-matter, follow this example:
+
 ```md
 ---
 layout: post
-title: "Post Title"
+title: Post Title
 date: 2019-05-02 16:32:44
-image: '/assets/img/blog/post-image.png'
-description: 'First steps to use this template'
+image: /assets/img/blog/post-image.png
+description: First steps to use this template
 tags:
-- jekyll 
-- template
+  - jekyll 
+  - template
 categories:
-- I love Jekyll
-twitter_text: 'How to install and use this template'
+  - I love Jekyll
+twitter_text: How to install and use this template
+keywords: jekyll, template, my post
 ---
 ```
+
 For other `./post.sh` command:
 - `./post -h` output instructions
 - `./post -c $TITLE` create post
@@ -110,7 +113,7 @@ For other `./post.sh` command:
 3. Or you can use automation deploy with `./deploy.sh`
 
 #### How to run server in local for development
-run `npm start` or `bundle exec jekyll server --host=IP_ADDR`
+run `npm start` or `bundle exec jekyll server --host=$IP_ADDR --port=$PORT`
 
 ---
 

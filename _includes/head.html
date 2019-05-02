@@ -9,7 +9,7 @@
   <!-- <meta http-equiv="Expires" content="-1" /> -->
 
   <meta name="title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
-  <meta name="keywords" content="{{ site.name }}, {{ site.username }}, {{ site.title }}, {% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
+  <meta name="keywords" content="{{ site.name }}, {{ site.username }}, {{ site.title }}{% if page.keywords %}, {{ page.keywords }}{% endif %}" />
   <meta name="description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
   
   <!-- Social: Twitter -->

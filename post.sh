@@ -36,7 +36,6 @@ CURRENT_YEAR="$(date +'%Y')"
 CURRENT_MONTH="$(date +'%m')"
 CURRENT_DATE="$(date +'%Y-%m-%d')"
 TIME=$(date +"%T")
-# CURRENT_DATE="$(date --date='yesterday' +'%Y-%m-%d')"
 # ----------------------------------------------------------------
 
 
@@ -62,9 +61,6 @@ if [[ "${1}" == "-p" || "${1}" == "--publish" ]]; then
     DIST_FOLDER="$POSTPATH"
     FILE_NAME="${CURRENT_DATE}-${POST_NAME}.md"
 fi
-
-# Set your blog URL
-BLOG_URL="your_site"
 
 # Set your assets URL
 ASSETS_URL="assets/img/"
@@ -132,13 +128,14 @@ initpost_content() {
 
 echo "---"
 echo "layout: post"
-echo "title: \"${POST_TITLE}\""
+echo "title: ${POST_TITLE}"
 echo "date: ${CURRENT_DATE} ${TIME}"
-echo "image: '/assets/img/blog/'"
+echo "image: /assets/img/blog/"
 echo "description:"
 echo "tags:"
 echo "categories:"
 echo "twitter_text:"
+echo "keywords:"
 echo "---"
 
 }

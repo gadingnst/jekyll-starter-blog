@@ -1,14 +1,15 @@
 ---
 layout: post
-title: "Belajar PDO di PHP"
+title: Belajar PDO di PHP
 date: 2018-10-26 15:29:02
-image: '/assets/img/blogimages/'
-description: 'Mengenal apa itu PDO dan bagaimana cara mengimplementasikannya'
+image: /assets/img/bg/desk5.jpg
+description: Mengenal apa itu PDO dan bagaimana cara mengimplementasikannya
 tags:
   - php
 categories:
-  - 'Belajar PHP - PDO'
+  - Belajar PHP - PDO
 twitter_text:
+keywords: php, pdo, programming
 ---
 
 ## Apa itu PDO ?
@@ -20,7 +21,7 @@ Kondisi ini berbeda jika menggunakan mysql extension atau mysqli extension. Kedu
 
 Secara teknis, apabila menggunakan mysql atau mysqli extension, PHP langsung berhubungan dengan MySQL Server, tetapi jika menggunakan PDO, ia tidak berhubungan langsung dengan database, tetapi hanya sebagai “interface”. Konsep PDO ini dapat digambarkan sebagai berikut:
 
-<p style="overflow-x: hidden;"><img data-aos="fade-right" src="https://s3.amazonaws.com/nettuts/693_pdo/pdo-to-db.png" alt="PDO-to-DB" /></p>
+![PDO to DB](https://s3.amazonaws.com/nettuts/693_pdo/pdo-to-db.png)
 <p style="text-align: center">PDO mengakses Database dengan DB Driver</p>
 
 PDO bekerja dengan metode yang disebut “data-access abstraction layer”. Artinya, apapun jenis database server yang digunakan, kode PHP yang ditulis akan tetap sama. PDO menyediakan “abstraction layer” untuk berkomunikasi dengan database server.
