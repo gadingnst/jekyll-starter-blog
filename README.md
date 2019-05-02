@@ -1,6 +1,6 @@
 ## Jekyll Starter Blog Template
 
-> Jekyll Blog Starter kit. Designed for developers that want to write blog posts that hosted in static hosting (e.g: [Github Pages](https://pages.github.com/)).
+> Designed for developers that want to write blog posts that hosted in static hosting (e.g: [Github Pages](https://pages.github.com/)).
 
 > Demo Website : https://sutanlab.js.org/jekyll-starter-blog
 
