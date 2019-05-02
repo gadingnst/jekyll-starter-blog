@@ -1,12 +1,8 @@
----
-layout: null
----
-
 <?xml version="1.0" encoding="utf-8"?>
 <browserconfig>
   <msapplication>
     <tile>
-      <square150x150logo src="{{site.baseurl}}/assets/icons/mstile-150x150.png"/>
+      <square150x150logo src="/jekyll-starter-blog/assets/icons/mstile-150x150.png"/>
       <TileColor>#2c3e50</TileColor>
     </tile>
   </msapplication>

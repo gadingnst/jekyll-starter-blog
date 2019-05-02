@@ -1,15 +1,19 @@
----
-layout: null
----
-
 [
-  {% for post in site.posts %}
+  
     {
-      "title"    : "{{ post.title | escape }}",
-      "category" : "{{ post.categories }}",
-      "tags"     : "{{ post.tags | array_to_sentence_string }}",
-      "url"      : "{{ site.baseurl }}{{ post.url }}",
-      "date"     : "{{ post.date | date_to_string}}"
-    } {% unless forloop.last %},{% endunless %}
-  {% endfor %}
+      "title"    : "Belajar PDO di PHP",
+      "category" : "Belajar PHP - PDO",
+      "tags"     : "php",
+      "url"      : "/jekyll-starter-blog/belajar-pdo-di-php/",
+      "date"     : "26 Oct 2018"
+    } ,
+  
+    {
+      "title"    : "Text Formatting Examples",
+      "category" : "Example",
+      "tags"     : "markdown",
+      "url"      : "/jekyll-starter-blog/text-formatting-examples/",
+      "date"     : "26 Oct 2018"
+    } 
+  
 ]

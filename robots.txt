@@ -1,8 +1,4 @@
----
-layout: null
----
-
 # robotstxt.org/
 
 User-agent: *
-Sitemap: {{ site.baseurl | prepend: site.url }}/sitemap.xml
+Sitemap: https://sutanlab.js.org/jekyll-starter-blog/sitemap.xml
