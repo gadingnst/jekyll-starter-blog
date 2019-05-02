@@ -43,7 +43,7 @@ url: "https://sutanlab.js.org" # the base hostname & protocol in your domain
 username: Sutan Nst.
 user_description: Learner, Coder & Coffee Maniac
 user_title: Welcome to My Blog Site
-avatar: /assets/img/sutan.jpeg
+avatar_url: /jekyll-starter-blog/assets/img/sutan.jpeg
 email: sutan.gnst@gmail.com
 github_username: sutanlab
 disqus_username: sutanlab
