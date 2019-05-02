@@ -25,9 +25,8 @@
 2. [Fork Jekyll Starter Blog](https://github.com/sutanlab/jekyll-starter-blog/fork)
 3. Clone or download the repository you just forked
 4. Go to folder you just cloned or downloaded and run `npm install` to install all npm and bundler dependencies
-5. Edit _config.yml to setting up your website
-6. Check out the sample posts in `_posts` to see examples for assigning categories and tags
-7. Read the documentation below for further customization pointers and documentation
+5. Check out the sample posts in `_posts` to see examples for assigning categories and tags
+6. Read the documentation below for further customization pointers and documentation
 
 #### Setting up your website
 Go and edit `_config.yml`
