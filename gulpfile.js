@@ -83,7 +83,8 @@ const imagemin = () => {
 const build = gulp.series(gulp.parallel(sass, script, imagemin), jekyll)
 
 const deploy = () => gulp.src('_site/**/*').pipe(gdeploy({
-	branch: 'gh-pages'
+	branch: 'gh-pages',
+	force: true
 }))
 
 const watch = () => {
