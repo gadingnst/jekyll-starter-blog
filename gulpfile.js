@@ -58,31 +58,33 @@ const sass = () => {
 
 const script = () => {
 	return gulp.src(app.script.src, { sourcemaps: true })
-	.pipe(gplumber())
-	.pipe(gorder(app.script.order, { base: './' }))
-	.pipe(gbabel({
-		presets: ['@babel/preset-env'],
-		ignore: ['src/js/vendor/**/*.js']
-	}))
-	.pipe(guglify()) // {mangle: true}
-  .pipe(gconcat('main.js'))
-  .pipe(gulp.dest(app.script.dest))
+		.pipe(gplumber())
+		.pipe(gorder(app.script.order, { base: './' }))
+		.pipe(gbabel({
+			presets: ['@babel/preset-env'],
+			ignore: ['src/js/vendor/**/*.js']
+		}))
+		.pipe(guglify()) // {mangle: true}
+  	.pipe(gconcat('main.js'))
+  	.pipe(gulp.dest(app.script.dest))
 }
 
 const imagemin = () => {
 	return gulp.src(app.imagemin.src)
-	.pipe(gplumber())
-	.pipe(gimagemin({
-		optimizationLevel: 3,
-		progressive: true,
-		interlaced: true
-	}))
-	.pipe(gulp.dest(app.imagemin.dest))
+		.pipe(gplumber())
+		.pipe(gimagemin({
+			optimizationLevel: 3,
+			progressive: true,
+			interlaced: true
+		}))
+		.pipe(gulp.dest(app.imagemin.dest))
 }
 
 const build = gulp.series(gulp.parallel(sass, script, imagemin), jekyll)
 
-const deploy = () => gulp.src('_site/**/*').pipe(gdeploy())
+const deploy = () => gulp.src('_site/**/*').pipe(gdeploy({
+	force: true
+}))
 
 const watch = () => {
 	jekyllOption = ['exec', 'jekyll', 'server']
