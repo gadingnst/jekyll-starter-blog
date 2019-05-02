@@ -3,7 +3,7 @@ name: Sutanlab Blog
 title: Sutan Nst. - Coder
 description: A blog and journal about Sutan Nst, Junior Developer
 baseurl: "/jekyll-starter-blog" # the subpath for your site default is ""
-url: "https://sutanlab.js.org" # the base hostname & protocol in your domain
+url: "https://sutanlab.js.org" # the base hostname & protocol in your domain (e.g: https://sutanlab.github.io)
 
 # Author Setting
 username: Sutan Nst.
