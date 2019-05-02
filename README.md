@@ -10,7 +10,7 @@
 - Mobile friendly (Add to Home Screen)
 - Comment System with Disqus
 - Live Search
-- Pagination
+- AJAX Pagination
 - Feed RSS
 - Sitemap
 - Shell script to create posts and automation deploy to github pages
