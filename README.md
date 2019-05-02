@@ -13,6 +13,7 @@
 - AJAX Pagination
 - Feed RSS
 - Sitemap
+- Robots Txt
 - Shell script to create posts and automation deploy to github pages
 
 ### Required in System
