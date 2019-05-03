@@ -3,7 +3,7 @@ language:
   - ruby
 branches:
   only:
-  - development
+  - master
 cache:
   directories:
     - node_modules
