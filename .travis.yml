@@ -9,7 +9,6 @@ branches:
 cache:
   directories:
     - node_modules
-    - vendor
     - .bundle
 install:
   - npm install
