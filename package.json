@@ -22,8 +22,8 @@
     "gulp-gh-pages-will": "0.5.5",
     "gulp-imagemin": "5.0.3",
     "gulp-order": "1.2.0",
-    "gulp-plumber": "0.6.6",
+    "gulp-plumber": "1.2.1",
     "gulp-sass": "4.0.2",
-    "gulp-uglify": "1.5.4"
+    "gulp-uglify": "3.0.2"
   }
 }
