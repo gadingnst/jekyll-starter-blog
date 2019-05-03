@@ -6,7 +6,7 @@
       template: '<li><article><a class="document-load" href="{url}">{title} <span class="entry-date"><time datetime="{date}">{date}</time></span></a></article></li>',
       searchResults: '.search-results',
       searchResultsTitle: '<h4>Search Results:</h4>',
-      limit: '10',
+      limit: '5',
       noResults: '<p>Oops!<br/><small>Nothing Found ! 🙁</small></p>'
     }, options)
 
