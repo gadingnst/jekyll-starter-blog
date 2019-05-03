@@ -1,5 +1,7 @@
 ## Jekyll Starter Blog Template
 
+[![Build Status](https://travis-ci.org/sutanlab/jekyll-starter-blog.svg?branch=master)](https://travis-ci.org/sutanlab/jekyll-starter-blog) ![Website](https://img.shields.io/website/https/sutanlab.js.org/jekyll-starter-blog.svg) [![Performance](assets/svgs/scores/lighthouse_performance.svg)](https://sutanlab.js.org/jekyll-starter-blog) [![Accessibility](assets/svgs/scores/lighthouse_accessibility.svg)](https://sutanlab.js.org/jekyll-starter-blog) [![Best Practice](assets/svgs/scores/lighthouse_best-practices.svg)](https://sutanlab.js.org/jekyll-starter-blog) [![SEO](assets/svgs/scores/lighthouse_seo.svg)](https://sutanlab.js.org/jekyll-starter-blog) [![PWA](assets/svgs/scores/lighthouse_pwa.svg)](https://sutanlab.js.org/jekyll-starter-blog)
+
 > Static generated site designed for developers that want to write blog posts that hosted in static hosting (e.g: [Github Pages](https://pages.github.com/)).
 
 > Demo Website : https://sutanlab.js.org/jekyll-starter-blog

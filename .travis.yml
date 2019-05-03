@@ -1,0 +1,16 @@
+language: 
+  - node_js
+  - ruby
+branches:
+  only:
+  - development
+cache:
+  directories:
+    - node_modules
+    - vendor
+    - .bundle
+install:
+  - gem install bundler
+  - npm install
+script:
+  - npm run build
