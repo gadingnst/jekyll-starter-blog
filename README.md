@@ -22,7 +22,6 @@
 ### Required in System
 1. [NodeJS](https://nodejs.org/en/download/) 
 2. [Ruby](https://www.ruby-lang.org/en/downloads/) 
-3. [Bundler](https://bundler.io/) 
 
 ### Setup
 1. Install the requirements
