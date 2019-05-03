@@ -12,7 +12,6 @@ cache:
     - vendor
     - .bundle
 install:
-  - gem install bundler
   - npm install
 script:
   - npm run build
