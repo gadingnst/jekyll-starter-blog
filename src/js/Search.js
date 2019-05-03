@@ -17,24 +17,25 @@
         type: "GET",
         url: settings.jsonFile,
         dataType: 'JSON',
-        success: function(data, textStatus, jqXHR) {
-          jsonData = data
-          registerEvent()
-        },
-        error: function(x,y,z) {
-          console.log("***ERROR in search***")
-          console.log(x)
-          console.log(y)
-          console.log(z)
-          // x.responseText should have what's wrong
+        beforeSend: function() {
+          searchResults.append('<p>🔍 Searching, please wait..</p>')
         }
+      }).done(data => {
+        searchResults.html('')
+        jsonData = data
+        registerEvent()
+      }).fail((res, stats, xhr) => {
+        console.log('***Got error in search***')
+        console.error(res)
+        console.error(stats)
+        console.error(xhr)
       })
     }
 
     function registerEvent(){
       origThis.keyup(function(e){
         if($(this).val().length){
-          writeMatches( performSearch($(this).val()) )
+          writeMatches(performSearch($(this).val()))
         }else{
           clearSearchResults()
         }

@@ -1,4 +1,4 @@
-(function( $, window, undefined ) {
+(function($, window) {
   // Menu
   $("a#slide").click(function(){
     $("#sidebar,a#slide,#fade").addClass("slide")
@@ -38,18 +38,17 @@
 
   // Scroll
   new SmoothScroll('a[href*="#"]', {
-    offset: 65
+    offset: 65,
+    speed: 800
   })
 
   // skill bar init
   $('.my-skill-bar').simpleSkillbar()
 
-  $(window).scroll(function(event) {
+  $(window).scroll(function() {
     if ($(window).scrollTop() > 85) $('#navbar').addClass('nav-color')
     else $('#navbar').removeClass('nav-color')
   })
-
-  // $(".document-load").on("click", documentLoad)
 
   $(window).on('load', function() {
     setTimeout(function() {
@@ -62,4 +61,4 @@
     }, 250)
   })
 
-})( $, window )
+})($, window)

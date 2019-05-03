@@ -23,7 +23,9 @@ function paginateBlog(that, event) {
     $('#content').html(htmlData)
     document.title = title
     window.history.pushState({html: htmlData, title: title}, title, pageUrl)
-    new SmoothScroll().animateScroll(document.querySelector('#content'))
+    new SmoothScroll().animateScroll(document.querySelector('#content'), {
+      speed: 800
+    })
     window.onpopstate = event => {
       if(event.state){
         $('#content').html(event.state.html)
