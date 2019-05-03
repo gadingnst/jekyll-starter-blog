@@ -64,6 +64,7 @@ exclude: [
   'package-lock.json',
   'Gemfile',
   'Gemfile.lock',
+  'renovate.json',
   'README.md'
 ]
 
