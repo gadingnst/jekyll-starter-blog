@@ -18,14 +18,15 @@
         url: settings.jsonFile,
         dataType: 'JSON',
         beforeSend: function() {
-          searchResults.append('<p>🔍 Searching, please wait..</p>')
+          searchResults.html('<p>🔍 Getting data, please wait..</p>')
         }
       }).done(data => {
         searchResults.html('')
         jsonData = data
         registerEvent()
       }).fail((res, stats, xhr) => {
-        console.log('***Got error in search***')
+        searchResults.html('<p>❌ Error in getting data: '+res.status+' '+xhr+'</p>')
+        console.error('***Got error in getting data***')
         console.error(res)
         console.error(stats)
         console.error(xhr)
