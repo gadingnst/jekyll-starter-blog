@@ -7,7 +7,7 @@
     "start": "export JEKYLL_ENV=development | gulp",
     "build": "export JEKYLL_ENV=production | gulp build",
     "deploy": "gulp deploy",
-    "preinstall": "gem install bundler; bundle install --path vendor/bundle"
+    "preinstall": "gem install bundler; bundle install --path .bundle/packages"
   },
   "author": "Sutan Nst.",
   "license": "Unlicense",
