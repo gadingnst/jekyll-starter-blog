@@ -20,7 +20,7 @@
     "gulp-babel": "8.0.0",
     "gulp-concat": "2.6.1",
     "gulp-gh-pages-will": "0.5.5",
-    "gulp-imagemin": "6.0.0",
+    "gulp-imagemin": "6.1.0",
     "gulp-order": "1.2.0",
     "gulp-plumber": "1.2.1",
     "gulp-sass": "4.0.2",
