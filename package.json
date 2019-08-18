@@ -16,7 +16,7 @@
     "@babel/preset-env": "7.5.5",
     "@babel/register": "7.5.5",
     "gulp": "4.0.2",
-    "gulp-autoprefixer": "6.1.0",
+    "gulp-autoprefixer": "7.0.0",
     "gulp-babel": "8.0.0",
     "gulp-concat": "2.6.1",
     "gulp-gh-pages-will": "0.5.5",
