@@ -118,6 +118,13 @@ For other `./post.sh` command:
 #### How to run server in local for development
 run `npm start` or `bundle exec jekyll server --host=$IP_ADDR --port=$PORT`
 
+### Support Me
+#### 1. Global
+[![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/B0B71P7PB)
+#### 2. Indonesia
+- [Trakteer](https://trakteer.id/sutanlab)
+- [Karyakarsa](https://karyakarsa.com/sutanlab)
+
 ---
 
 Copyright © 2019 by Sutan Gading Fadhillah Nasution
