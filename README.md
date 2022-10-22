@@ -120,10 +120,10 @@ run `npm start` or `bundle exec jekyll server --host=$IP_ADDR --port=$PORT`
 
 ## Support Me
 ### Global
-[![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/B0B71P7PB)
+[![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/gadingnst)
 ### Indonesia
-- [Trakteer](https://trakteer.id/sutanlab)
-- [Karyakarsa](https://karyakarsa.com/sutanlab)
+- [Trakteer](https://trakteer.id/gadingnst)
+- [Karyakarsa](https://karyakarsa.com/gadingnst)
 
 ---
 
