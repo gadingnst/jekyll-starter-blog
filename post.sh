@@ -4,7 +4,7 @@
 #
 # Program: initpost.sh
 # Author: Vitor Britto
-# Modified by: Sutan Nst.
+# Modified by: Gading Nst.
 # Description: script to create an initial structure for my posts.
 #
 # Usage: ./initpost.sh [options] <post name>

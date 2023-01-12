@@ -36,13 +36,13 @@ Go and edit `_config.yml`
 ```yml
 # Site settings
 name: Sutanlab Blog
-title: Sutan Nst. - Coder
-description: A blog and journal about Sutan Nst, Junior Developer
+title: Gading Nst. - Coder
+description: A blog and journal about Gading Nst, Junior Developer
 baseurl: "/jekyll-starter-blog" # the subpath for your site default is ""
 url: "https://sutanlab.js.org" # the base hostname & protocol in your domain (e.g: https://sutanlab.github.io)
 
 # Author Setting
-username: Sutan Nst.
+username: Gading Nst.
 user_description: Learner, Coder & Coffee Maniac
 user_title: Welcome to My Blog Site
 avatar_url: /jekyll-starter-blog/assets/img/sutan.jpeg
@@ -127,4 +127,4 @@ run `npm start` or `bundle exec jekyll server --host=$IP_ADDR --port=$PORT`
 
 ---
 
-Copyright © 2019 by Sutan Gading Fadhillah Nasution
+Copyright © 2019 by Gading Gading Fadhillah Nasution

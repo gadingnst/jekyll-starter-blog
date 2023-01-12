@@ -9,7 +9,7 @@
     "deploy": "gulp deploy",
     "preinstall": "gem install bundler; bundle install --path .bundle/packages"
   },
-  "author": "Sutan Nst.",
+  "author": "Gading Nst.",
   "license": "Unlicense",
   "devDependencies": {
     "@babel/core": "7.6.0",
